@@ -1,8 +1,19 @@
 class DockingStation
+    @docking = []
     def release_bike
-        bike = Bike.new
-
+      Bike.new
     end
+    def empty_docking
+      bike = nil
+    end
+    def docking
+        @docking
+        
+    end
+end
+
+def view_bike
+  @docking
 end
 
 class Bike
@@ -10,3 +21,4 @@ class Bike
         true
     end
 end
+
